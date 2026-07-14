@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamza Kaygısız | Portfolio</title>
+    <style>
+        :root {
+            --bg-color: #f8f9fa;
+            --text-color: #212529;
+            --primary-color: #1d3557;
+            --secondary-color: #457b9d;
+            --accent-color: #e63946;
+            --card-bg: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 3rem 1.5rem;
+            text-align: center;
+        }
+
+        /* Profil Fotoğrafı Alanı */
+        .profile-img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--secondary-color);
+            margin-bottom: 1rem;
+            background-color: #ddd; /* Fotoğraf yüklenene kadar gri arka plan */
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #f1faee;
+            font-weight: 300;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Sosyal Medya Butonları */
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .social-btn {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1.2rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .social-btn:hover {
+            background-color: var(--secondary-color);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        section {
+            background: var(--card-bg);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        /* About Me */
+        .about-text {
+            font-size: 1.05rem;
+            color: #4a4a4a;
+        }
+
+        /* Education & Projects */
+        .item {
+            margin-bottom: 1.5rem;
+        }
+
+        .item:last-child {
+            margin-bottom: 0;
+        }
+
+        .item-title {
+            font-weight: bold;
+            color: var(--primary-color);
+            font-size: 1.1rem;
+        }
+
+        .item-subtitle {
+            color: var(--secondary-color);
+            font-size: 0.95rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .item p {
+            font-size: 0.95rem;
+            color: #555;
+        }
+
+        .project-list {
+            list-style-type: none;
+        }
+
+        .project-list li {
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+            border-left: 3px solid var(--accent-color);
+        }
+
+        /* Skills */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .skill-tag {
+            background-color: #e1eaf2;
+            color: var(--primary-color);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            text-align: center;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        /* Contact */
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+        }
+
+        .contact-info a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.9rem;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <!-- Profil Fotoğrafı Alanı -->
+        <img class="profile-img" src="profil.jpeg" alt="Hamza Kaygısız">
+        
+        <h1>HAMZA KAYGISIZ</h1>
+        <p>Electronics Engineering Intern</p>
+        
+        <!-- Sosyal Bağlantılar -->
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/hamza-kayg%C4%B1s%C4%B1z-332838274" target="_blank" class="social-btn">LinkedIn</a>
+            <a href="https://github.com/Hamza-Kaygsz" target="_blank" class="social-btn">GitHub</a>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <!-- About Me Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p class="about-text">
+                Electrical and Electronics Engineering student with a solid background in software development. Experienced in avionics subsystem documentation (KTR/ÖTR), hardware research, and web technologies through TEKNOFEST projects. Focused on supporting R&D, technical reporting, and electronic design processes.
+            </p>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education">
+            <h2>Education</h2>
+            <div class="item">
+                <div class="item-title">Electrical and Electronic Engineering</div>
+                <div class="item-subtitle">Istanbul Sabahattin Zaim University (2024 - 2029 Expected)</div>
+                <p>Expected Coursework: Circuit Theory, Digital Design, Signals and Systems, Microprocessors.</p>
+            </div>
+            <hr style="margin: 1rem 0; border: 0; border-top: 1px solid #eee;">
+            <div class="item">
+                <div class="item-title">Informatics - Software Development</div>
+                <div class="item-subtitle">Borusan Asım Kocabıyık Technical High School (2020 - 2024)</div>
+                <p>Focused on software development, algorithm design, and computer hardware fundamentals. Developed core programming skills during technical education.</p>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Projects & Competitions</h2>
+            <div class="item">
+                <div class="item-title">Technical Member | TEKNOFEST Projects</div>
+                <div class="item-subtitle">2024 - 2026</div>
+                <ul class="project-list">
+                    <li>
+                        <strong>Tahtelbahir (Underwater Rocket):</strong> Authored the Avionics Subsystem section of the KTR; researched sensor integration, power budget, and electrical safety.
+                    </li>
+                    <li>
+                        <strong>Logikid (Educational Tech):</strong> Designed and developed the official web platform; created technical diagrams and visuals for the ÖTR.
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-tag">Mobile Development</div>
+                <div class="skill-tag">C / C++ Language</div>
+                <div class="skill-tag">Circuit Analysis</div>
+                <div class="skill-tag">Web Development</div>
+                <div class="skill-tag">Technical Documentation</div>
+                <div class="skill-tag">Computer Technician</div>
+                <div class="skill-tag">English (B2)</div>
+                <div class="skill-tag">Spanish (A1)</div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <p><strong>Location:</strong> Esenyurt, Istanbul, Turkey</p>
+                <p><strong>Phone:</strong> +90 543 146 50 07</p>
+                <p><strong>Email:</strong> <a href="mailto:hamzakaygsz@hotmail.com">hamzakaygsz@hotmail.com</a></p>
+                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/hamza-kayg%C4%B1s%C4%B1z-332838274" target="_blank">linkedin.com/in/hamza-kaygısız</a></p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/Hamza-Kaygsz" target="_blank">github.com/Hamza-Kaygsz</a></p>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Hamza Kaygısız. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
